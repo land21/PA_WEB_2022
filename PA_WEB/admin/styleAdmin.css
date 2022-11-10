@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header, main, .main-content{
+header,
+main,
+.main-content {
     height: 100vh;
     width: 100%;
-    background-image: url(../img/background.png) ;
-    background-position:right center;
+    background-image: url(../img/background.png);
+    background-position: right center;
     background-size: cover;
-    position:relative;
+    position: relative;
     background-attachment: fixed;
-    
 }
 
 .Logo {
@@ -25,8 +25,8 @@ header, main, .main-content{
     cursor: pointer;
 }
 
-
-li, a{
+li,
+a {
     font-family: "Dosis";
     font-weight: 500;
     font-size: 16px;
@@ -45,30 +45,36 @@ nav {
     list-style: none;
     /* text-align: center; */
 }
-#navlink{
+
+#navlink {
     background-color: none;
 }
 
-.nav-links ul li{
+.nav-links ul li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav-links ul li .darkmode, .login2, .darkmode2, .close{
+.nav-links ul li .darkmode,
+.login2,
+.darkmode2,
+.close {
     display: none;
 }
+
 .nav-links #close {
     display: none;
 }
-#menu{
+
+#menu {
     display: none;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
     transition: all 0.3s ease 0;
 }
 
-.nav-links ul li a:hover{
+.nav-links ul li a:hover {
     color: #83CED5;
 }
 
@@ -103,13 +109,14 @@ button {
     font-size: 60px;
     color: #83CED5;
 }
+
 .left-content p {
     font-size: 20px;
     font-weight: 300;
     color: #26223B;
 }
 
-.book button{
+.book button {
     padding: 10px 15px;
     margin-top: 30px;
 }
@@ -120,28 +127,30 @@ button {
     align-items: center;
 }
 
-.right-content img{
+.right-content img {
     max-height: 400px;
     min-height: 10px;
 }
 
-main{
+main {
     align-items: center;
     height: 200vh;
 }
 
-.main-content{
+.main-content {
     text-align: center;
     color: #26223B;
     font-family: 'Dosis';
     background-size: cover;
 }
-.main-content h1{
+
+.main-content h1 {
     font-size: 50px;
     font-weight: 900;
+    margin-top: -38%;
 }
 
-.main-content p{
+.main-content p {
     font-size: 20px;
     font-weight: 400;
 }
@@ -149,24 +158,27 @@ main{
 .box-content {
     display: inline-flex;
     flex-wrap: wrap;
+    margin-bottom: 200%;
 }
 
-.vaksin img{
+.vaksin img {
     margin: 50px 10px 10px 10px;
     max-height: 300px;
 }
 
-.grooming img{
+.grooming img {
     margin: 50px 10px 10px 10px;
     max-height: 300px;
 }
 
-.steril img{
+.steril img {
     margin: 50px 10px 10px 10px;
     max-height: 300px;
 }
 
-.grooming p, .steril p, .vaksin p{
+.grooming p,
+.steril p,
+.vaksin p {
     font-size: 20px;
     font-weight: 700;
 }
@@ -189,6 +201,7 @@ main{
     font-size: 60px;
     color: #F89A58;
 }
+
 .left-about p {
     font-size: 30px;
     font-weight: 300;
@@ -201,27 +214,27 @@ main{
     align-items: center;
 }
 
-.right-about img{
+.right-about img {
     max-height: 400px;
     min-height: 10px;
 }
 
-footer{
+footer {
     padding: 40px 0;
     background-color: #F89A58;
-    font-family: 'Dosis';
     text-align: center;
+    font-family: 'Dosis';
+    margin-top: -55%;
 }
 
-h4{
+h4 {
     font-size: 25px;
     line-height: 1.6;
-    color:#26223B;
+    color: #26223B;
     padding: 0 15px;
 }
 
-
-footer h4:hover{
+footer h4:hover {
     color: #83CED5;
 }
 
@@ -233,11 +246,12 @@ footer .copyright {
 }
 
 @media(max-width: 700px) {
-    .nav-links ul li{
+    .nav-links ul li {
         display: block;
         padding-top: 15px;
-    } 
-    .nav-links ul li .login2, .darkmode2{
+    }
+    .nav-links ul li .login2,
+    .darkmode2 {
         display: block;
     }
     .nav-links #close {
@@ -245,18 +259,17 @@ footer .copyright {
         max-height: 20px;
         margin: 10px 10px 10px 100px;
         cursor: pointer;
-        
     }
-    .nav-links ul{
+    .nav-links ul {
         padding: 30px;
-    } 
-    #menu{
+    }
+    #menu {
         display: block;
         max-height: 20px;
     }
-    .nav-links{
+    .nav-links {
         position: absolute;
-        background:#D0ECF0 ;
+        background: #D0ECF0;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -265,72 +278,69 @@ footer .copyright {
         text-align: left;
         display: none;
     }
-    .nav-links ul li .login, .darkmode{
+    .nav-links ul li .login,
+    .darkmode {
         display: none;
     }
-
-    .header-content{
+    .header-content {
         flex-direction: column-reverse;
         margin-top: 20px;
     }
-    .right-content{
+    .right-content {
         flex-basis: 100%;
     }
-    .right-content img{
+    .right-content img {
         width: 77%;
         margin-left: 15%;
     }
-    .left-content{
+    .left-content {
         flex-basis: 100%;
     }
-    .left-content h1{
+    .left-content h1 {
         font-size: 45px;
     }
-    .left-content p{
+    .left-content p {
         font-size: 16px;
     }
-
-    .main-content h1{
+    .main-content h1 {
         font-size: 45px;
     }
-    .main-content p{
+    .main-content p {
         font-size: 16px;
     }
-    .vaksin img{
+    .vaksin img {
         width: 50%;
         margin-top: 10px;
     }
-    .grooming img{
+    .grooming img {
         width: 50%;
         margin-top: 10px;
     }
-    .steril img{
+    .steril img {
         width: 50%;
         margin-top: 10px;
     }
-    .box-content{
+    .box-content {
         flex-direction: column-reverse;
     }
-    .about-content{
-
+    .about-content {
         flex-direction: column-reverse;
     }
-    .right-about{
+    .right-about {
         flex-basis: 100%;
     }
-    .right-about img{
+    .right-about img {
         width: 50%;
-        margin-left:20%;
+        margin-left: 20%;
         /* margin: 50% 0 0 20%; */
     }
-    .left-about{
+    .left-about {
         flex-basis: 100%;
     }
-    .left-about h1{
+    .left-about h1 {
         font-size: 45px;
     }
-    .left-about p{
+    .left-about p {
         font-size: 16px;
     }
-
 }
