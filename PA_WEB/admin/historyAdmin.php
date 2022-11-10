@@ -1,7 +1,9 @@
 <?php
     require '../config.php';
     $result = mysqli_query($db,
-            "SELECT * FROM kucing");
+            "SELECT * FROM kucing
+            JOIN history
+            WHERE kucing.id=history.id_history;");
 ?>
 
 <!DOCTYPE html>
@@ -43,8 +45,8 @@
             <th style="width:15%">JENIS PERAWATAN</th>
             <th>NAMA KUCING</th>
             <th style="width:8%">KELAMIN KUCING</th>
+            <th>TANGGAL PEMERIKSAAN</th>
             <th>TANGGAL BOOKING</th>
-            <th>TANGGAL RAWAT</th>
             <th>FOTO KUCING</th>
             <th>Status</th>
         </tr>
@@ -54,13 +56,13 @@
             ?>
         <tr>
            <td><?=$i?></td>
-           <td><?=$row['bnama']?></td>
-           <td><?=$row['bjenis']?></td>
-           <td><?=$row['knama']?></td>
-           <td><?=$row['kkelamin']?></td>
-           <td><?=$row['bbook']?></td>
-           <td><?=$row['btrawat']?></td>
-           <td><img src="../gambar/<?=$row['kfoto']?>" alt="" width = 100px >
+           <td><?=$row['nama_pemilik']?></td>
+           <td><?=$row['jenis_perawatan']?></td>
+           <td><?=$row['nama_kucing']?></td>
+           <td><?=$row['sex']?></td>
+           <td><?=$row['tgl_pemeriksaan']?></td>
+           <td><?=$row['tgl_booking']?></td>
+           <td><img src="../gambar/<?=$row['foto_kucing']?>" alt="" width = 100px >
            <td><?=$row['status']?></td>
         </tr>
             <?php 

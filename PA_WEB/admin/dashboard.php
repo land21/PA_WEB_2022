@@ -51,5 +51,5 @@
         </p>
     </footer>
 </body>
-<script src="../jQuery.js"></script>
+<script src="dashboardAdmin.js"></script>
 </html>

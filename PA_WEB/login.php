@@ -71,12 +71,7 @@
             echo "<script>
                     alert('Username tidak ada');
                     </script>";
-        }
-
-
-        
-
-       
+        }       
     }
 
 ?>

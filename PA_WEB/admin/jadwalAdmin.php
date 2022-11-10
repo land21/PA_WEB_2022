@@ -14,20 +14,20 @@
     <link rel="stylesheet" href="../styleJadwal.css">
 </head>
 <body>
-        <nav>
-            <a href="dashboard.php"><img class="Logo" src="../img/Logo.png" alt="Cat Paw" id="logo"></a>
-            <div  class="nav-links" id="navlink">
-                <ul id="menuList">
-                    <li><a href="dashboard.php"><h1>DASHBOARD ADMIN</h1></a></li>
-                    <li><a class="login2" href="#Home">Login</a></li>
-                    <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
-                    <!-- <li><a class="login" href="#Home"><button>Login</button></a></li> -->
-                </ul>
-                <img src="../img/close.png" id="close">
-            </div>
-            <img src="../img/menu.png" alt="menu" id="menu">
-            <img src="../img/darkmode.png" alt="darkmode" class="darkmode" id="btnmode">
-        </nav>
+    <nav>
+        <a href="dashboard.php"><img class="Logo" src="../img/Logo.png" alt="Cat Paw" id="logo"></a>
+        <div  class="nav-links" id="navlink">
+            <ul id="menuList">
+                <li><a href="dashboard.php"><h1>DASHBOARD ADMIN</h1></a></li>
+                <li><a class="login2" href="#Home">Login</a></li>
+                <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
+                <!-- <li><a class="login" href="#Home"><button>Login</button></a></li> -->
+            </ul>
+            <img src="../img/close.png" id="close">
+        </div>
+        <img src="../img/menu.png" alt="menu" id="menu">
+        <img src="../img/darkmode.png" alt="darkmode" class="darkmode" id="btnmode">
+    </nav>
     <div class="table_head">
         <h3>JADWAL PERAWATAN KUCING</h3>
         <div>
