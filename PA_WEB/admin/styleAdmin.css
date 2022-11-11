@@ -166,18 +166,18 @@ main {
     max-height: 300px;
 } */
 
-.grooming img {
+.schedule img {
     margin: 50px 10px 10px 10px;
     max-height: 300px;
 }
 
-.steril img {
+.history img {
     margin: 50px 10px 10px 10px;
     max-height: 300px;
 }
 
-.grooming p,
-.steril p{
+.schedule p,
+.history p{
     font-size: 20px;
     font-weight: 700;
 }
@@ -311,11 +311,11 @@ footer .copyright {
         width: 50%;
         margin-top: 10px;
     } */
-    .grooming img {
+    .schedule img {
         width: 50%;
         margin-top: 10px;
     }
-    .steril img {
+    .history img {
         width: 50%;
         margin-top: 10px;
     }

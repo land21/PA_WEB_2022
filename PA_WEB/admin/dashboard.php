@@ -33,12 +33,12 @@
                     <a href=""><img src="../img/vaksin.png" alt="HTML" id="vaksin"></a>
                     <p>PROFILE ADMIN</p>
                 </div> -->
-                <div class="grooming">
-                    <a href="jadwalAdmin.php"><img src="../img/grooming.png" alt="HTML" id="grooming"></a>
+                <div class="schedule">
+                    <a href="jadwalAdmin.php"><img src="../img/schedule.png" alt="HTML" id="schedule"></a>
                     <p>SCHEDULE</p>
                 </div>
-                <div class="steril">
-                    <a href="historyAdmin.php"><img src="../img/steril.png" alt="HTML" id="steril"></a>
+                <div class="histroy">
+                    <a href="historyAdmin.php"><img src="../img/history.png" alt="HTML" id="history"></a>
                     <p>HISTORY</p>
                 </div>
             </div>
