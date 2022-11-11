@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{Cat United</title>
-    <link rel="stylesheet" href="styleAdmin.css">
+    <title>Cat United</title>
+    <link rel="stylesheet" href="styleAdmin.css?v6">
 </head>
 <body>
     <header id="Home">
@@ -29,15 +29,11 @@
             <h1 id="wwcd">What We Can Do</h1>
             <p>We look after your little family, we ensure that we will give the best treatment for your little family.</p>
             <div class="box-content" id="content-wwcd">
-                <!-- <div class="vaksin">
-                    <a href=""><img src="../img/vaksin.png" alt="HTML" id="vaksin"></a>
-                    <p>PROFILE ADMIN</p>
-                </div> -->
                 <div class="schedule">
                     <a href="jadwalAdmin.php"><img src="../img/schedule.png" alt="HTML" id="schedule"></a>
                     <p>SCHEDULE</p>
                 </div>
-                <div class="histroy">
+                <div class="history">
                     <a href="historyAdmin.php"><img src="../img/history.png" alt="HTML" id="history"></a>
                     <p>HISTORY</p>
                 </div>
