@@ -13,31 +13,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadwal</title>
-    <link rel="stylesheet" href="../styleJadwal.css">
+    <link rel="stylesheet" href="../styleHistory.css">
 </head>
 <body>
         <nav>
-            <a href="dashboard.php"><img class="Logo" src="../img/Logo.png" alt="Cat Paw" id="logo"></a>
-            <div  class="nav-links" id="navlink">
-                <ul id="menuList">
+            <a href="dashboard.php"><img class="Logo-history" src="../img/Logo.png" alt="Cat Paw" id="logo-history"></a>
+            <div  class="nav-history" id="navhistory">
+                <ul id="menuHistory">
                     <li><a href="dashboard.php"><h1>DASHBOARD ADMIN</h1></a></li>
                     <li><a class="login2" href="#Home">Login</a></li>
                     <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
                     <!-- <li><a class="login" href="#Home"><button>Login</button></a></li> -->
                 </ul>
-                <img src="../img/close.png" id="close">
+                <img src="../img/close.png" id="close-history">
             </div>
-            <img src="../img/menu.png" alt="menu" id="menu">
+            <img src="../img/menu.png" alt="menu" id="menu-history">
             <img src="../img/darkmode.png" alt="darkmode" class="darkmode" id="btnmode">
         </nav>
-    <div class="table_head">
-        <h3>JADWAL PERAWATAN KUCING</h3>
+    <div class="table_head-history">
+        <h3>HISTORY PERAWATAN KUCING</h3>
         <div>
             <button class = "add"><a href="booking.php"><img src="../img/addw.png" alt="Tambah Data"></a></button>
         </div>
     </div>
 
-    <div class="table">
+    <div class="table-history">
     <table border='1'>
         <tr>
             <th style="width:5%">NO</th>

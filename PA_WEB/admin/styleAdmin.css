@@ -161,10 +161,10 @@ main {
     margin-bottom: 200%;
 }
 
-.vaksin img {
+/* .vaksin img {
     margin: 50px 10px 10px 10px;
     max-height: 300px;
-}
+} */
 
 .grooming img {
     margin: 50px 10px 10px 10px;
@@ -177,8 +177,7 @@ main {
 }
 
 .grooming p,
-.steril p,
-.vaksin p {
+.steril p{
     font-size: 20px;
     font-weight: 700;
 }
@@ -308,10 +307,10 @@ footer .copyright {
     .main-content p {
         font-size: 16px;
     }
-    .vaksin img {
+    /* .vaksin img {
         width: 50%;
         margin-top: 10px;
-    }
+    } */
     .grooming img {
         width: 50%;
         margin-top: 10px;

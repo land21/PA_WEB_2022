@@ -29,10 +29,10 @@
             <h1 id="wwcd">What We Can Do</h1>
             <p>We look after your little family, we ensure that we will give the best treatment for your little family.</p>
             <div class="box-content" id="content-wwcd">
-                <div class="vaksin">
+                <!-- <div class="vaksin">
                     <a href=""><img src="../img/vaksin.png" alt="HTML" id="vaksin"></a>
                     <p>PROFILE ADMIN</p>
-                </div>
+                </div> -->
                 <div class="grooming">
                     <a href="jadwalAdmin.php"><img src="../img/grooming.png" alt="HTML" id="grooming"></a>
                     <p>SCHEDULE</p>
