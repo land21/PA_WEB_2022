@@ -31,11 +31,11 @@
             <div class="box-content" id="content-wwcd">
                 <div class="schedule">
                     <a href="jadwalAdmin.php"><img src="../img/schedule.png" alt="HTML" id="schedule"></a>
-                    <p>SCHEDULE</p>
+                    <p>GROOMING</p>
                 </div>
                 <div class="history">
-                    <a href="historyAdmin.php"><img src="../img/history.png" alt="HTML" id="history"></a>
-                    <p>HISTORY</p>
+                <a href="historyAdmin.php"><img src="../img/history.png" alt="HTML" id="history"></a>
+                    <p>STERILIZATION</p>
                 </div>
             </div>
         </div>
