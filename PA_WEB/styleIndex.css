@@ -95,7 +95,7 @@ nav {
     padding: 0px 20px;
 }
 
-.nav-links ul li .darkmode, .login2, .darkmode2, .close{
+.nav-links ul li .darkmode, .login2, .darkmode2, .close, .resall, .resmy{
     display: none;
 }
 .nav-links #close {
@@ -111,10 +111,6 @@ nav {
 
 .nav-links ul li a:hover{
     color: #83CED5;
-}
-
-ul li .resall, ul li .resmy {
-    display: block;
 }
 
 .drop{
@@ -327,7 +323,7 @@ footer .copyright {
     color: #FFF9F5;
 }
 
-@media(max-width: 480px) {
+@media(max-width: 700px) {
     .nav-links ul li{
         display: block;
         padding-top: 15px;

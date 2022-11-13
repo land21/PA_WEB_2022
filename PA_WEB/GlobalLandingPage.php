@@ -43,7 +43,7 @@
             <div class="left-content">
                 <h1 id="ycf">Your Cat is Part of Our Family</h1>
                 <p>Let us treat your cat like our own family with best service</p>
-                <a class="book" href="GlobalSchedule.php"><button>See Schedule</button></a>
+                <a class="book" href="UserGlobalSchedule.php"><button>See Schedule</button></a>
             </div>
             <div class="right-content">
                 <img src="img/Kucing.png" alt="Cat" id="kucing">

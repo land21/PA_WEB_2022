@@ -1,7 +1,13 @@
 <?php
     require 'GlobalConfig.php';
     session_start();
-    $data = $_SESSION['Nama'];
+    if(!isset($_SESSION['login'])){
+        echo "<script>
+                document.location.href = 'UserLogin.php'
+            </script>";
+    }else{
+        $data = $_SESSION['Nama'];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -22,13 +28,13 @@
                     <li id="teksaboutus"><a href="GlobalAboutUs.php">About Us</a></li>
                     <li><a class="login2" href="UserLogout.php">Logout</a></li>
                     <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
-                    <li><a href="UserGlobalSchedule.php">All Schedule</a></li>
-                    <li><a href="UserSchedule.php">My Schedule</a></li>
+                    <li><a class="resall" href="UserGlobalSchedule.php">All Schedule</a></li>
+                    <li><a class="resmy" href="UserSchedule.php">My Schedule</a></li>
                     <li class="drop" ><a><?php echo $data;?></a>
                         <ul class="dropdown">
                         <li><a href="UserGlobalSchedule.php">All Schedule</a></li>
                         <li><a href="UserSchedule.php">My Schedule</a></li>
-                        <li id="darkmode"><p>Darkmode</p></li>
+                        <li id="btnmode"><p>Darkmode</p></li>
                         <li><a href="UserLogout.php">Logout</a></li>                        
                         </ul>
                     </li>

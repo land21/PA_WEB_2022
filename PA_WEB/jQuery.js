@@ -17,8 +17,9 @@ $('#btnmode, #darkmode2').click(function () {
         $('#logo').attr('src', 'img/logodark.png');
         $('.table').css('color','#FFF9F5')
         $('li, a').css('color', '#FFF9F5');
+        $('ul li ul.dropdown').css('background-color', '#26223B');
+        $('.drop').css('background-color', '#26223B');
         $('button').css({ 'background-color': '#FFF9F5', 'color': '#121212' });
-        $('#btnmode').attr('src', 'img/lightmode.png');
         $('#kucing').attr('src', 'img/Kucingdark.png');
         $('p').css('color', '#FFF9F5');
         $('h1').css('color', '#FFF9F5');
@@ -47,11 +48,12 @@ $('#btnmode, #darkmode2').click(function () {
         $('body').css({ "background-image": "url(img/background.png)" });
         $('#logo').attr('src', 'img/Logo.png');
         $('.table_head').css('color','#26223B');
+        $('ul li ul.dropdown').css('background-color', '#D0ECF0');
         $('.table').css('color','#26223B')
+        $('.drop').css('background-color', '#D0ECF0');
         $('table th').css('background-color', '#F89A58');
-        $('li, a').css('color', '#F89A58');
+        $('li, a, #btnmode').css('color', '#F89A58');
         $('button').css({ 'background-color': '#F89A58', 'color': '#FFF9F5' });
-        $('#btnmode').attr('src', 'img/darkmode.png');
         $('#kucing').attr('src', 'img/Kucing.png');
         $('p').css('color', '#26223B');
         $('cr').css('color', '#FFF9F5');

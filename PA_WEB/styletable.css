@@ -57,6 +57,15 @@ nav {
 .nav-links ul li .darkmode, .login2, .darkmode2, .close{
     display: none;
 }
+
+.nav-links ul li .resall{
+    display: none;
+}
+
+.nav-links ul li .resmy{
+    display: none;
+}
+
 .nav-links #close {
     display: none;
 }
@@ -285,9 +294,11 @@ button:hover{
         display: block;
         padding-top: 15px;
     } 
+
     .nav-links ul li .login2, .darkmode2{
         display: block;
     }
+    
     .nav-links #close {
         display: block;
         max-height: 20px;
