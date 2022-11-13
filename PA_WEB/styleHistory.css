@@ -6,6 +6,17 @@
     box-sizing: border-box;
 }
 
+input[type='text']{
+    height: 50px;
+    width: 340px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    background: #ffffff;
+}
+
+
 header, main, .main-content{
     height: 100vh;
     width: 100%;
@@ -17,7 +28,7 @@ header, main, .main-content{
     
 }
 
-.Logo-history {
+.Logo {
     max-height: 30px;
 }
 
@@ -42,33 +53,33 @@ nav {
     align-items: center;
 }
 
-.nav-history {
+.nav-links{
     list-style: none;
 }
-#navhistory{
+#navlink{
     background-color: none;
 }
 
-.nav-history ul li{
+.nav-links ul li{
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav-history ul li .darkmode, .login2, .darkmode2, .close{
+.nav-links ul li .darkmode, .login2, .darkmode2, .close{
     display: none;
 }
-.nav-history #close-history {
+.nav-links #close {
     display: none;
 }
-#menu-history{
+#menu{
     display: none;
 }
 
-.nav-history ul li a{
+.nav-links ul li a{
     transition: all 0.3s ease 0;
 }
 
-.nav-history ul li a:hover{
+.nav-links ul li a:hover{
     color: #83CED5;
 }
 
@@ -97,7 +108,7 @@ body{
     
 }
 
-.table_head-history{
+.table_head{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 30px;
@@ -112,7 +123,7 @@ body{
 
 }
 
-.table_head-history p {
+.table_head p {
     color: #F89A58;
 }
 
@@ -134,7 +145,7 @@ button{
     cursor: pointer;
 }
 
-.table-history {
+.table {
     height: 650px;
     overflow: auto;
     margin-left: 10px;
@@ -186,4 +197,84 @@ button:hover{
 
 ::placeholder{
     color: #F89A58;
+}
+
+@media(max-width: 700px) {
+    input[type='text']{
+        margin-top: 10px ;
+        margin-bottom: 15px ;
+        height: 37px;
+        max-width: 250px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        padding: 0 25px;
+        background: #ffffff;
+    }
+
+    .table_head{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: transparent;
+        font-size: 20px;
+        color: #26223B;
+    }
+    
+    .table_head p {
+        color: #F89A58;
+    }
+    
+    .add {
+        vertical-align: middle;
+        padding: 10px 20px;
+        color: #ffffff;
+        background-color: #F89A58;
+    }
+    
+    .add img {
+        max-width: 10px;
+    }    
+
+
+    .nav-links ul li{
+        display: block;
+        padding-top: 15px;
+    } 
+    .nav-links ul li .login2, .darkmode2{
+        display: block;
+    }
+    .nav-links #close {
+        display: block;
+        max-height: 20px;
+        margin: 10px 10px 10px 100px;
+        cursor: pointer;
+        
+    }
+    .nav-links ul{
+        padding: 30px;
+    } 
+    #menu{
+        display: block;
+        max-height: 20px;
+    }
+    .nav-links{
+        position: absolute;
+        background:#D0ECF0 ;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        text-align: left;
+        display: none;
+    }
+    .nav-links ul li .login, .darkmode{
+        display: none;
+    }
+
 }

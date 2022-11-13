@@ -5,7 +5,58 @@
     padding: 0;
 }
 
-header{
+ul li .resall, ul li .resmy {
+    display: block;
+}
+
+
+.drop{
+    background-color: #D0ECF0;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+
+.drop ul{
+    display: inline-block;
+    position: relative;
+}
+
+.drop ul li a, .drop ul li p {
+    display: block;
+    padding: 20px 25px ;
+    color: #F89A58;
+    text-decoration: none;
+    text-align: left;
+}
+
+.drop ul li p{
+    cursor: pointer;
+}
+
+.drop ul li p:hover{
+    color: #83CED5;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 20%;
+    background-color: #FFF9F5;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+
+header, main, .main-content{
     height: 100vh;
     width: 100%;
     background-image: url(img/background.png) ;
@@ -20,18 +71,11 @@ header{
     max-height: 30px;
 }
 
-button {
-    color: #FFF9F5;
-    padding: 5px 15px;
-    background-color: #F89A58;
-    border: none;
-    border-radius: 50px;
+.darkmode {
+    max-height: 20px;
     cursor: pointer;
-    transition: all 0.3s ease 0;
-    font-family: "Dosis";
-    font-weight: 700;
-    font-size: 16px;
 }
+
 
 li, a{
     font-family: "Dosis";
@@ -49,14 +93,26 @@ nav {
 }
 
 .nav-links {
-    flex: 1;
     list-style: none;
-    text-align: center;
+    /* text-align: center; */
+}
+#navlink{
+    background-color: none;
 }
 
 .nav-links ul li{
     display: inline-block;
     padding: 0px 20px;
+}
+
+.nav-links ul li .darkmode, .login2, .darkmode2, .close{
+    display: none;
+}
+.nav-links #close {
+    display: none;
+}
+#menu{
+    display: none;
 }
 
 .nav-links ul li a{
@@ -67,68 +123,143 @@ nav {
     color: #83CED5;
 }
 
-.header-content {
+button {
+    color: #FFF9F5;
+    padding: 5px 15px;
+    background-color: #F89A58;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+    font-family: "Dosis";
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.about-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 0px;
+    margin: 150px 0px;
 }
 
-.left-content {
+.left-about {
     font-family: 'Dosis';
     flex-basis: 40%;
     position: relative;
     margin-left: 50px;
 }
 
-.left-content h1 {
+.left-about h1 {
     font-size: 60px;
-    color: #83CED5;
+    color: #F89A58;
 }
-.left-content p {
-    font-size: 20px;
+.left-about p {
+    font-size: 30px;
     font-weight: 300;
     color: #26223B;
 }
 
-
-.right-content {
+.right-about {
     flex-basis: 40%;
     position: relative;
     align-items: center;
 }
 
-.right-content img{
+.right-about img{
     max-height: 400px;
-    border-radius: 20px;
     min-height: 10px;
 }
 
+footer{
+    padding: 40px 0;
+    background-color: #F89A58;
+    font-family: 'Dosis';
+}
+
+footer ul {
+    list-style: none;
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+footer ul li a{
+    color:#26223B;
+    text-decoration: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+footer ul li a:hover{
+    color: #83CED5;
+}
+
+footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #FFF9F5;
+}
+
 @media(max-width: 700px) {
-    .nav-links ul {
-        width: 100%;
+    .nav-links ul li{
+        display: block;
+        padding-top: 15px;
+    } 
+    .nav-links ul li .login2, .darkmode2{
+        display: block;
+    }
+    .nav-links #close {
+        display: block;
+        max-height: 20px;
+        margin: 10px 10px 10px 100px;
+        cursor: pointer;
+        
+    }
+    .nav-links ul{
+        padding: 30px;
+    } 
+    #menu{
+        display: block;
+        max-height: 20px;
+    }
+    .nav-links{
         position: absolute;
-        top: 50px;
+        background:#D0ECF0 ;
+        height: 100vh;
+        width: 200px;
+        top: 0;
         right: 0;
         z-index: 2;
-    } 
-    .header-content{
+        text-align: left;
+        display: none;
+    }
+    .nav-links ul li .login, .darkmode{
+        display: none;
+    }
+    .about-content{
+
         flex-direction: column-reverse;
-        margin: 50px 0;
     }
-    .right-content{
+    .right-about{
         flex-basis: 100%;
     }
-    .right-content img{
+    .right-about img{
         width: 77%;
+        margin-left:15%;
+        /* margin: 50% 0 0 20%; */
     }
-    .left-content{
+    .left-about{
         flex-basis: 100%;
     }
-    .left-content h1{
+    .left-about h1{
         font-size: 45px;
     }
-    .left-content p{
+    .left-about p{
         font-size: 16px;
     }
 

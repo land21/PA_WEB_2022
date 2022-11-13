@@ -5,6 +5,47 @@
     padding: 0;
 }
 
+.Float{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0;
+    z-index: 9999;
+    color: #F89A58;
+    transition: .2s;
+}
+
+.Float:hover{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.Float span{
+    font-size: 16px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+    color: #26223B;
+}
+
+.Float:hover span{
+    display: inline-block;
+}
+
+.Float img{
+    max-height: 25px;
+}
+
+.Float:hover img{
+    margin-bottom: -3px;
+}
+
 header, main, .main-content{
     height: 100vh;
     width: 100%;
@@ -70,6 +111,52 @@ nav {
 
 .nav-links ul li a:hover{
     color: #83CED5;
+}
+
+ul li .resall, ul li .resmy {
+    display: block;
+}
+
+.drop{
+    background-color: #D0ECF0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.drop ul{
+    display: inline-block;
+    position: relative;
+}
+
+.drop ul li a, .drop ul li p {
+    display: block;
+    padding: 20px 25px ;
+    color: #F89A58;
+    text-decoration: none;
+    text-align: left;
+}
+
+.drop ul li p{
+    cursor: pointer;
+}
+
+.drop ul li p:hover{
+    color: #83CED5;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 20%;
+    background-color: #FFF9F5;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    display: block;
 }
 
 button {
@@ -240,7 +327,7 @@ footer .copyright {
     color: #FFF9F5;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 480px) {
     .nav-links ul li{
         display: block;
         padding-top: 15px;
@@ -262,6 +349,39 @@ footer .copyright {
         display: block;
         max-height: 20px;
     }
+
+    .drop{
+        display: none;
+        background-color: none;
+    }
+    
+    .drop ul{
+        display: none;
+    }
+    
+    .drop ul li a, .drop ul li p {
+        display: none;
+    }
+    
+    .drop ul li p{
+        display: none;
+    }
+    
+    .drop ul li p:hover{
+        display: none;
+    }
+    
+    ul li ul.dropdown li {
+        display: none;
+    }
+    
+    ul li ul.dropdown {
+        display: none;
+    }
+    ul li:hover ul.dropdown{
+        display: none;
+    }
+
     .nav-links{
         position: absolute;
         background:#D0ECF0 ;
@@ -275,6 +395,10 @@ footer .copyright {
     }
     .nav-links ul li .login, .darkmode{
         display: none;
+    }
+
+    ul li .resall, ul li .resmy{
+        display: block;
     }
 
     .header-content{
