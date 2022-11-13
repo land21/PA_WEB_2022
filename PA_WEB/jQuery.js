@@ -13,8 +13,9 @@ $('#btnmode, #darkmode2').click(function () {
             $('#darkmode2').css('display', 'none');
             alert("Anda Memasuki Dark Mode");
         }
-        $('header, main, .main-content').css({ "background-image": "url(img/backgrounddark.png)" });
+        $('header, main, .main-content, .schedule').css({ "background-image": "url(img/backgrounddark.png)" });
         $('#logo').attr('src', 'img/logodark.png');
+        $('.table').css('color','#FFF9F5')
         $('li, a').css('color', '#FFF9F5');
         $('button').css({ 'background-color': '#FFF9F5', 'color': '#121212' });
         $('#btnmode').attr('src', 'img/lightmode.png');
@@ -29,6 +30,9 @@ $('#btnmode, #darkmode2').click(function () {
         $('#footer').css('color', '#FEE0CB');
         $('#close').attr('src', 'img/closedark.png');
         $('#menu').attr('src', 'img/menudark.png');
+        $('body').css({ "background-image": "url(img/backgrounddark.png)" });
+        $('.table_head').css('color','#FFF9F5');
+        $('table th').css('background-color', '#FFF9F5');
         darkmode = 1;
     } else {
         if (window.matchMedia('(max-width: 767px)').matches) {
@@ -40,7 +44,11 @@ $('#btnmode, #darkmode2').click(function () {
             alert("Anda Memasuki Light Mode");
         }
         $('header, main, .main-content').css({ "background-image": "url(img/background.png)" });
+        $('body').css({ "background-image": "url(img/background.png)" });
         $('#logo').attr('src', 'img/Logo.png');
+        $('.table_head').css('color','#26223B');
+        $('.table').css('color','#26223B')
+        $('table th').css('background-color', '#F89A58');
         $('li, a').css('color', '#F89A58');
         $('button').css({ 'background-color': '#F89A58', 'color': '#FFF9F5' });
         $('#btnmode').attr('src', 'img/darkmode.png');

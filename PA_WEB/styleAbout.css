@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+ul li .resall, ul li .resmy {
+    display: block;
+}
+
+
 .drop{
     background-color: #D0ECF0;
     padding: 20px;

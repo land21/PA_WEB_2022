@@ -14,22 +14,22 @@ $('#btnmode, #darkmode2').click(function () {
             $('#darkmode2').css('display', 'none');
             alert("Anda Memasuki Dark Mode");
         }
-        $('header, main, .main-content').css({ "background-image": "url(../img/backgrounddark.png)" });
-        $('#logo').attr('src', '../img/logodark.png');
+        $('header, main, .main-content').css({ "background-image": "url(img/backgrounddark.png)" });
+        $('#logo').attr('src', 'img/logodark.png');
         $('li, a').css('color', '#FFF9F5');
         $('button').css({ 'background-color': '#FFF9F5', 'color': '#121212' });
-        $('#btnmode').attr('src', '../img/lightmode.png');
-        $('#kucing').attr('src', '../img/Kucingdark.png');
+        $('#btnmode').attr('src', 'img/lightmode.png');
+        $('#kucing').attr('src', 'img/Kucingdark.png');
         $('p').css('color', '#FFF9F5');
         $('h1').css('color', '#FFF9F5');
-        $('#vaksin').attr('src', '../img/vaksindark.png');
-        $('#grooming').attr('src', '../img/groomingdark.png');
-        $('#steril').attr('src', '../img/sterildark.png');
-        $('#aboutimg').attr('src', '../img/aboutdark.png');
+        $('#vaksin').attr('src', 'img/vaksindark.png');
+        $('#grooming').attr('src', 'img/groomingdark.png');
+        $('#steril').attr('src', 'img/sterildark.png');
+        $('#aboutimg').attr('src', 'img/aboutdark.png');
         $('footer').css('background-color', '#1F1B24');
         $('#footer').css('color', '#FEE0CB');
-        $('#close').attr('src', '../img/closedark.png');
-        $('#menu').attr('src', '../img/menudark.png');
+        $('#close').attr('src', 'img/closedark.png');
+        $('#menu').attr('src', 'img/menudark.png');
         darkmode = 1;
     } else {
         if (window.matchMedia('(max-width: 767px)').matches) {
@@ -40,25 +40,25 @@ $('#btnmode, #darkmode2').click(function () {
             $('#darkmode2').css('display', 'none');
             alert("Anda Memasuki Light Mode");
         }
-        $('header, main, .main-content').css({ "background-image": "url(../img/background.png)" });
-        $('#logo').attr('src', '../img/Logo.png');
+        $('header, main, .main-content').css({ "background-image": "url(img/background.png)" });
+        $('#logo').attr('src', 'img/Logo.png');
         $('li, a').css('color', '#F89A58');
         $('button').css({ 'background-color': '#F89A58', 'color': '#FFF9F5' });
-        $('#btnmode').attr('src', '../img/darkmode.png');
-        $('#kucing').attr('src', '../img/Kucing.png');
+        $('#btnmode').attr('src', 'img/darkmode.png');
+        $('#kucing').attr('src', 'img/Kucing.png');
         $('p').css('color', '#26223B');
         $('cr').css('color', '#FFF9F5');
         $('#ycf').css('color', '#83CED5');
         $('#cu').css('color', '#F89A58');
         $('#wwcd, #content-wwcd').css('color', '#26223B');
-        $('#vaksin').attr('src', '../img/vaksin.png');
-        $('#grooming').attr('src', '../img/grooming.png');
-        $('#steril').attr('src', '../img/steril.png');
-        $('#aboutimg').attr('src', '../img/about.png');
+        $('#vaksin').attr('src', 'img/vaksin.png');
+        $('#grooming').attr('src', 'img/grooming.png');
+        $('#steril').attr('src', 'img/steril.png');
+        $('#aboutimg').attr('src', 'img/about.png');
         $('footer').css('background-color', '#F89A58');
         $('#footer a').css('color', '#26223B');
-        $('#close').attr('src', '../img/close.png');
-        $('#menu').attr('src', '../img/menu.png');
+        $('#close').attr('src', 'img/close.png');
+        $('#menu').attr('src', 'img/menu.png');
         
         
         darkmode = 0;

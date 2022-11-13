@@ -18,8 +18,7 @@
                 <ul id="menuList">
                     <li><a href="index.php">Home</a></li>
                     <li id="teksaboutus"><a href="GlobalAboutUs.php">About Us</a></li>
-                    <li id="teksservice"><a href="index.php">Service</a></li>
-                    <li><a class="login2" href="UserLogin.php">Login</a></li>
+                    <li><a class="login2" href="UserLogout.php">Logout</a></li>
                     <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
                     <!-- <li><a class="login" href="#Home"><button>Login</button></a></li> -->
                 </ul>
@@ -84,6 +83,7 @@
     </table>
     </div>
 </body>
+<script src="jQuery.js"></script>
 </html>
 
 

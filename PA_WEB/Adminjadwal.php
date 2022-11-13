@@ -20,7 +20,7 @@
         <div  class="nav-links" id="navlink">
             <ul id="menuList">
                 <li><a href="Admindashboard.php"><h1>DASHBOARD ADMIN</h1></a></li>
-                <li><a class="login2" href="AdminLogin.php">Login</a></li>
+                <li><a class="login2" href="UserLogout.php">Logout</a></li>
                 <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
                 <!-- <li><a class="login" href="#Home"><button>Login</button></a></li> -->
             </ul>
@@ -92,6 +92,7 @@
     </table>
     </div>
 </body>
+<script src="jQuery.js"></script>
 </html>
 
 

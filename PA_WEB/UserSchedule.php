@@ -20,8 +20,10 @@
                 <ul id="menuList">
                     <li><a href="index.php">Home</a></li>
                     <li id="teksaboutus"><a href="GlobalAboutUs.php">About Us</a></li>
-                    <li><a class="login2" href="UserLogin.php">Login</a></li>
+                    <li><a class="login2" href="UserLogout.php">Logout</a></li>
                     <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
+                    <li><a href="UserGlobalSchedule.php">All Schedule</a></li>
+                    <li><a href="UserSchedule.php">My Schedule</a></li>
                     <li class="drop" ><a><?php echo $data;?></a>
                         <ul class="dropdown">
                         <li><a href="UserGlobalSchedule.php">All Schedule</a></li>
@@ -94,6 +96,7 @@
     </table>
     </div>
 </body>
+<script src="jQuery.js"></script>
 </html>
 
 
