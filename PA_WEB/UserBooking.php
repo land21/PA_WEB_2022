@@ -48,7 +48,7 @@
             <input type="hidden" name="tanggal_booking" value=<?php echo $min ?>>
             <label for="">Tanggal dan Waktu Perawatan : </label><br>
             <input type="date" name="tanggal_rawat" min="<?php echo $mindate?>" max="<?php echo $maxdate?>">
-            <input type="time" name = "waktu" min ="08:00" max = "20.00"><br><br>
+            <input type="time" name = "waktu" min ="08:00" max = "20:00"><br><br>
             <label for="">Gambar Kucing : </label><br>
             <input type="file" name='gambar' accept="image/*"><br><br>
             <button type="submit" name='submit' class="submit">TAMBAH</button>
