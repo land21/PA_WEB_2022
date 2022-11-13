@@ -1,9 +1,7 @@
 <?php
-    require '../config.php';
+    require 'GlobalConfig.php';
     $result = mysqli_query($db,
-            "SELECT * FROM kucing
-            JOIN history
-            WHERE kucing.id=history.id_history;");
+            "SELECT * FROM history");
 ?>
 
 <!DOCTYPE html>
@@ -13,27 +11,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadwal</title>
-    <link rel="stylesheet" href="../styleHistory.css">
+    <link rel="stylesheet" href="styleHistory.css">
 </head>
 <body>
         <nav>
-            <a href="dashboard.php"><img class="Logo-history" src="../img/Logo.png" alt="Cat Paw" id="logo-history"></a>
+            <a href="Admindashboard.php"><img class="Logo-history" src="img/Logo.png" alt="Cat Paw" id="logo-history"></a>
             <div  class="nav-history" id="navhistory">
                 <ul id="menuHistory">
-                    <li><a href="dashboard.php"><h1>DASHBOARD ADMIN</h1></a></li>
-                    <li><a class="login2" href="#Home">Login</a></li>
+                    <li><a href="Admindashboard.php"><h1>DASHBOARD ADMIN</h1></a></li>
+                    <li><a class="login2" href="AdminLogin.php">Login</a></li>
                     <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
                     <!-- <li><a class="login" href="#Home"><button>Login</button></a></li> -->
                 </ul>
-                <img src="../img/close.png" id="close-history">
+                <img src="img/close.png" id="close-history">
             </div>
-            <img src="../img/menu.png" alt="menu" id="menu-history">
-            <img src="../img/darkmode.png" alt="darkmode" class="darkmode" id="btnmode">
+            <img src="img/menu.png" alt="menu" id="menu-history">
+            <img src="img/darkmode.png" alt="darkmode" class="darkmode" id="btnmode">
         </nav>
     <div class="table_head-history">
         <h3>HISTORY PERAWATAN KUCING</h3>
         <div>
-            <button class = "add"><a href="booking.php"><img src="../img/addw.png" alt="Tambah Data"></a></button>
+            <button class = "add"><a href="AdminBooking.php"><img src="img/addw.png" alt="Tambah Data"></a></button>
         </div>
     </div>
 
@@ -48,7 +46,6 @@
             <th>TANGGAL PEMERIKSAAN</th>
             <th>TANGGAL BOOKING</th>
             <th>FOTO KUCING</th>
-            <th>Status</th>
         </tr>
             <?php
             $i = 1;
@@ -62,8 +59,7 @@
            <td><?=$row['sex']?></td>
            <td><?=$row['tgl_pemeriksaan']?></td>
            <td><?=$row['tgl_booking']?></td>
-           <td><img src="../gambar/<?=$row['foto_kucing']?>" alt="" width = 100px >
-           <td><?=$row['status']?></td>
+           <td><img src="gambar/<?=$row['foto_kucing']?>" alt="" width = 100px >
         </tr>
             <?php 
                 $i++;   

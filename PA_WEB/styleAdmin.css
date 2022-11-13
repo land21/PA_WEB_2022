@@ -4,12 +4,10 @@
     padding: 0;
 }
 
-header,
-main,
-.main-content {
+header {
     height: 90vh;
     width: 100%;
-    background-image: url(../img/background.png);
+    background-image: url(img/background.png);
     background-position: right center;
     background-size: cover;
     position: relative;
@@ -25,8 +23,7 @@ main,
     cursor: pointer;
 }
 
-li,
-a {
+li,a {
     font-family: "Dosis";
     font-weight: 500;
     font-size: 16px;
@@ -132,23 +129,18 @@ button {
     min-height: 10px;
 }
 
-main {
-    align-items: center;
-    height: 50vh;
-    margin-bottom: 100%;
-}
 
 .main-content {
     text-align: center;
     color: #26223B;
     font-family: 'Dosis';
     background-size: cover;
+    margin: 100px 0 0 0;
 }
 
 .main-content h1 {
     font-size: 50px;
     font-weight: 900;
-    margin-top: -38%;
 }
 
 .main-content p {
@@ -161,12 +153,6 @@ main {
     flex-wrap: wrap;
     /* margin-bottom: 100%; */
 }
-
-
-/* .vaksin img {
-    margin: 50px 10px 10px 10px;
-    max-height: 300px;
-} */
 
 .schedule img {
     margin: 50px 10px 10px 10px;
@@ -184,48 +170,14 @@ main {
     font-weight: 700;
 }
 
-.about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 150px 0px;
-}
 
-.left-about {
-    font-family: 'Dosis';
-    flex-basis: 40%;
-    position: relative;
-    margin-left: 50px;
-}
-
-.left-about h1 {
-    font-size: 60px;
-    color: #F89A58;
-}
-
-.left-about p {
-    font-size: 30px;
-    font-weight: 300;
-    color: #26223B;
-}
-
-.right-about {
-    flex-basis: 40%;
-    position: relative;
-    align-items: center;
-}
-
-.right-about img {
-    max-height: 400px;
-    min-height: 10px;
-}
 
 footer {
-    padding: 40px 0;
+    padding: 20px 0;
     background-color: #F89A58;
     text-align: center;
     font-family: 'Dosis';
-    margin-top: -80%;
+    /* margin-top: ; */
 }
 
 h4 {

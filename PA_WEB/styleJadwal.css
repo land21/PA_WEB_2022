@@ -6,6 +6,37 @@
     box-sizing: border-box;
 }
 
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance:none;
+    height: 20px;
+    width: 20px;
+    background-color:#83CED5;
+    border-radius:5px ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+input[type="checkbox"]:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 18px;
+    color: #26223B;
+    display: none;
+}
+
+input[type="checkbox"]:checked{
+    background-color:#F89A58;
+}
+
+
+input[type="checkbox"]:checked:after{
+    display: block;
+}
 header, main, .main-content{
     height: 100vh;
     width: 100%;
@@ -134,11 +165,23 @@ button{
     cursor: pointer;
 }
 
+input[type='text']{
+    height: 50px;
+    width: 340px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    background: #ffffff;
+}
+
 .table {
     height: 650px;
     overflow: auto;
     margin-left: 10px;
     margin-right: 10px;
+    align-items: center;
+    text-align: center;
 }
 
 table {

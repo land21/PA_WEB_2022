@@ -1,10 +1,15 @@
 <?php
+    require 'GlobalConfig.php';
     session_start();
     if(!isset($_SESSION['login'])){
         echo "<script>
-                document.location.href = 'landingpage.php';
+                document.location.href = 'GlobalLandingPage.php';
             </script>";
     }
+    $sql = "SELECT * FROM user";
+    $query = mysqli_query($db, $sql);
+    $result = mysqli_fetch_assoc($query);
+    $data = $_SESSION['Nama'];
 ?>
 
 <!DOCTYPE html>
@@ -19,26 +24,34 @@
 <body>
     <header id="Home">
         <nav>
-            <a href="index.html"><img class="Logo" src="img/Logo.png" alt="Cat Paw" id="logo"></a>
+            <a href="index.php"><img class="Logo" src="img/Logo.png" alt="Cat Paw" id="logo"></a>
             <div  class="nav-links" id="navlink">
                 <ul id="menuList">
-                    <li><a href="#Home">Home</a></li>
-                    <li id="teksaboutus"><a href="#AboutUsHome">About Us</a></li>
-                    <li id="teksservice"><a href="#ServiceHome">Service</a></li>
-                    <li><a class="login2" href="logout.php">Logout</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li id="teksaboutus"><a href="UserAboutLogin.php">About</a></li>
+                    <li><a class="login2" href="UserLogout.php">Logout</a></li>
                     <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
-                    <li><a class="login" href="logout.php"><button>Logout</button></a></li>
+                    <li class="resall"><a href="UserGlobalSchedule.php">All Schedule</a></li>
+                    <li class="resmy"><a href="UserSchedule.php">My Schedule</a></li>
+                    <li class="drop" ><a><?php echo $data;?></a>
+                        <ul class="dropdown">
+                        <li class="allsch"><a href="UserGlobalSchedule.php">All Schedule</a></li>
+                        <li class="mysch"><a href="UserSchedule.php">My Schedule</a></li>
+                        <li id="darkmode"><p>Darkmode</p></li>
+                        <li class="lg"><a href="UserLogout.php">Logout</a></li>                        
+                        </ul>
+                    </li>
                 </ul>
                 <img src="img/close.png" id="close">
             </div>
             <img src="img/menu.png" alt="menu" id="menu">
-            <img src="img/darkmode.png" alt="darkmode" class="darkmode" id="btnmode">
+            <!-- <img src="img/darkmode.png" alt="darkmode" class="darkmode" id="btnmode"> -->
         </nav>
         <div class="header-content">
             <div class="left-content">
                 <h1 id="ycf">Your Cat is Part of Our Family</h1>
                 <p>Let us treat your cat like our own family with best service</p>
-                <a class="book" href="booking.php"><button>Book a Schedule</button></a>
+                <a class="book" href="UserGlobalSchedule.php"><button>See Schedule</button></a>
             </div>
             <div class="right-content">
                 <img src="img/Kucing.png" alt="Cat" id="kucing">
@@ -76,9 +89,8 @@
     </main>
     <footer>
         <ul id="footer">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="#ServiceHome">Service</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="UserAboutLogin.php">About Me</a></li>
         </ul>
         <p class="copyright" id="cr">
             Cat United @ 2022
