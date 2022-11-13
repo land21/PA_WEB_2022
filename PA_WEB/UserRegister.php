@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrasi</title>
     <link rel="stylesheet" href="stylebooking.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/Kucing.png"/>
 </head>
 <body>
     <div  class="form">

@@ -22,8 +22,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Comptible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Jadwal</title>
+    <title>Admin Booking Jadwal</title>
     <link rel="stylesheet" href="stylebooking.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/Kucing.png"/>
 </head>
 <body>
     <div class="form" >

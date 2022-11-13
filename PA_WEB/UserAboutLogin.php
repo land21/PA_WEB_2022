@@ -19,6 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About {Cat United</title>
     <link rel="stylesheet" href="styleAbout.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/Kucing.png"/>
 </head>
 <body>
 <header id="Home">

@@ -25,8 +25,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Comptible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Jadwal</title>
+    <title>Admin Edit Jadwal</title>
     <link rel="stylesheet" href="styleedit.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/Kucing.png"/>
 </head>
 <body>
     <div class="form">  
