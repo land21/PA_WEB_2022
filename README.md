@@ -4,7 +4,7 @@ Kelompok 5 A2 2020:
 - 2009106026 Sulhairah
 - 2009106028 Mitha Amalia <br><br><br>
 
-<img src="https://github.com/land21/PA_WEB_2022/blob/main/PA_WEB/img/Logo.png" align="left">
+<img src="https://github.com/land21/PA_WEB_2022/blob/main/PA_WEB/img/Logo.png" align="left" width="width/2">
 <img src="https://github.com/land21/PA_WEB_2022/blob/main/PA_WEB/img/Kucing.png" align="right" width="100px"><br><br>
 
 <br><br><br><h1><b>CatShop Treatment (Atur Jadwal Perawatan Kucing)</b></h1>
