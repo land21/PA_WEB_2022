@@ -34,12 +34,12 @@
                     <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
                     <li ><a class="resall" href="UserGlobalSchedule.php">All Schedule</a></li>
                     <li ><a class="resmy" href="UserSchedule.php">My Schedule</a></li>
-                    <li class="drop" ><a><?php echo $data;?></a>
+                    <li class="drop" ><a class="nama"><?php echo $data;?></a>
                         <ul class="dropdown">
                         <li ><a class="allsch" href="UserGlobalSchedule.php">All Schedule</a></li>
                         <li ><a class="mysch" href="UserSchedule.php">My Schedule</a></li>
-                        <li id="btnmode"><p>Darkmode</p></li>
-                        <li class="lg"><a href="UserLogout.php">Logout</a></li>                        
+                        <li id="btnmode"><p class="darkmode3" id="darkmode3">Darkmode</p></li>
+                        <li class="lg"><a class = "lg" href="UserLogout.php">Logout</a></li>                        
                         </ul>
                     </li>
                 </ul>

@@ -59,6 +59,7 @@ $('#btnmode, #darkmode2').click(function () {
         $('#footer a').css('color', '#26223B');
         $('#close').attr('src', 'img/close.png');
         $('#menu').attr('src', 'img/menu.png');
+        $('h1').css('color', '#F89A58');
         
         
         darkmode = 0;

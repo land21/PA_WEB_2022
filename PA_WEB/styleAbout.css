@@ -5,8 +5,8 @@
     padding: 0;
 }
 
-ul li .resall, ul li .resmy {
-    display: block;
+.nav-links ul li .resall, .resmy{
+    display: none;
 }
 
 
@@ -240,6 +240,10 @@ footer .copyright {
     }
     .nav-links ul li .login, .darkmode{
         display: none;
+    }
+
+    ul li .resall, ul li .resmy{
+        display: block;
     }
     .about-content{
 

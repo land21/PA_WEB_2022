@@ -84,7 +84,6 @@
         <ul id="footer">
             <li><a href="index.php">Home</a></li>
             <li><a href="GlobalAboutUs.php">About Me</a></li>
-            <li><a href="index.php">Service</a></li>
         </ul>
         <p class="copyright" id="cr">
             Cat United @ 2022

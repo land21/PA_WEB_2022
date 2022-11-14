@@ -49,9 +49,10 @@
                 <option value="JANTAN">Jantan</option>
                 <option value="BETINA">Betina</option>
             </select><br><br>
-            <input type="hidden" name="tanggal_booking" value=<?php echo $min ?>>
+            <input type="hidden" name="tanggal_booking" value=<?php echo $mindate ?>>
             <label for="">Tanggal dan Waktu Perawatan : </label><br>
-            <input type="datetime-local" name="tanggal_rawat" min="<?php echo $min?>" max="<?php echo $max?>" value=<?=$row['btrawat']?>><br><br>
+            <input type="date" name="tanggal_rawat" min="<?php echo $mindate?>" max="<?php echo $maxdate?>">
+            <input type="time" name = "waktu" min ="08:00" max = "20:00"><br><br>
             <button type="submit" name='submit' class="submit">EDIT</button>
         </form>
     </div>
@@ -66,10 +67,11 @@
         $kkelamin = $_POST['kelamin'];
         $bbook = $_POST['tanggal_booking'];
         $btrawat = $_POST['tanggal_rawat'];
+        $waktu = $_POST['waktu'];
 
 
         $result = mysqli_query($db, 
-        "UPDATE kucing SET bnama='$bnama', bjenis='$bjenis', knama='$knama',kkelamin='$kkelamin',bbook='$bbook',btrawat='$btrawat' WHERE id='$id'");
+        "UPDATE kucing SET bnama='$bnama', bjenis='$bjenis', knama='$knama',kkelamin='$kkelamin',bbook='$bbook',btrawat='$btrawat',bwaktu='$waktu' WHERE id='$id'");
         if ($result) {
             header("Location:AdminJadwal.php");
         }

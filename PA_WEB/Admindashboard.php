@@ -19,7 +19,7 @@
             <a href="Admindashboard.php"><img class="Logo" src="img/Logo.png" alt="Cat Paw" id="logo"></a>
             <div  class="nav-links" id="navlink">
                 <ul id="menuList">
-                    <li><h1><?php echo $_SESSION['username']," : " ,$_SESSION['nama_admin'] ?></h1></li>
+                    <li><h1 class="admin"><?php echo $_SESSION['username']," : " ,$_SESSION['nama_admin'] ?></h1></li>
                     <li><a class="login2" href="UserLogout.php">Logout</a></li>
                     <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
                     <li><a class="login" href="UserLogout.php"><button>Logout</button></a></li>

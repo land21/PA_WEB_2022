@@ -31,13 +31,13 @@
                     <li id="teksaboutus"><a href="UserAboutLogin.php">About</a></li>
                     <li><a class="login2" href="UserLogout.php">Logout</a></li>
                     <li id="darkmode2"><p class="darkmode2">Dark Mode</p></li>
-                    <li class="resall"><a href="UserGlobalSchedule.php">All Schedule</a></li>
-                    <li class="resmy"><a href="UserSchedule.php">My Schedule</a></li>
+                    <li ><a class="resall" href="UserGlobalSchedule.php">All Schedule</a></li>
+                    <li ><a class="resmy" href="UserSchedule.php">My Schedule</a></li>
                     <li class="drop" ><a><?php echo $data;?></a>
                         <ul class="dropdown">
                         <li><a href="UserGlobalSchedule.php">All Schedule</a></li>
                         <li><a href="UserSchedule.php">My Schedule</a></li>
-                        <li id="darkmode"><p>Darkmode</p></li>
+                        <li id="btnmode"><p class="darkmode3" id="darkmode3">Darkmode</p></li>
                         <li><a href="UserLogout.php">Logout</a></li>                        
                         </ul>
                     </li>

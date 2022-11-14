@@ -70,6 +70,7 @@
                 if($result){
                     echo "<script>
                         alert('Registrasi Berhasil');
+                        document.location.href = 'UserLogin.php';
                         </script>";
                 }
 

@@ -324,6 +324,15 @@ footer .copyright {
 }
 
 @media(max-width: 700px) {
+    .drop{
+        background-color: transparent;
+
+    }
+
+    .nav-links ul li ul li .allsch, .nav-links ul li ul li .mysch, .nav-links ul li ul li .lg, .nav-links ul li ul li .darkmode3{
+        display: none;
+    }
+
     .nav-links ul li{
         display: block;
         padding-top: 15px;

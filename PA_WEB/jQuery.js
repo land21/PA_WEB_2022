@@ -13,6 +13,7 @@ $('#btnmode, #darkmode2').click(function () {
             $('#darkmode2').css('display', 'none');
             alert("Anda Memasuki Dark Mode");
         }
+        $('.darkmode3').text('Light Mode');
         $('header, main, .main-content, .schedule').css({ "background-image": "url(img/backgrounddark.png)" });
         $('#logo').attr('src', 'img/logodark.png');
         $('.table').css('color','#FFF9F5')
@@ -34,6 +35,7 @@ $('#btnmode, #darkmode2').click(function () {
         $('body').css({ "background-image": "url(img/backgrounddark.png)" });
         $('.table_head').css('color','#FFF9F5');
         $('table th').css('background-color', '#FFF9F5');
+        $('#btnmode').attr('src', 'img/lightmode.png');
         darkmode = 1;
     } else {
         if (window.matchMedia('(max-width: 767px)').matches) {
@@ -44,7 +46,10 @@ $('#btnmode, #darkmode2').click(function () {
             $('#darkmode2').css('display', 'none');
             alert("Anda Memasuki Light Mode");
         }
+        $('.darkmode3').text('Darkmode');
+        $('#darkmode3').css('color','#F89A58');
         $('header, main, .main-content').css({ "background-image": "url(img/background.png)" });
+        $('#btnmode').attr('src', 'img/darkmode.png');
         $('body').css({ "background-image": "url(img/background.png)" });
         $('#logo').attr('src', 'img/Logo.png');
         $('.table_head').css('color','#26223B');
@@ -68,6 +73,7 @@ $('#btnmode, #darkmode2').click(function () {
         $('#footer a').css('color', '#26223B');
         $('#close').attr('src', 'img/close.png');
         $('#menu').attr('src', 'img/menu.png');
+        $('h1').css('color', '#F89A58');
         
         
         darkmode = 0;

@@ -57,3 +57,31 @@ button:hover{
     color: #F89A58;
 }
 
+input[type="date"], input[type="time"]{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+
+@media(max-width: 700px) {
+    .form{
+        border-radius: 20px;
+        background: #F89A58;
+        max-width: 300px;
+        min-width: 100px;
+        padding: 2rem;
+        box-shadow: 0 0px 2.2px rgba(0,0,0,0.028), 0 0px 5.3px rgba(0,0,0,0.04),0 0px 10px rgba(0,0,0,0.05);
+    }
+
+    .select, input[type="text"],input[type="password"], input[type="email"], input[type="datetime-local"] {
+        height: 30px;
+        max-width: 200px;
+        min-width: 50px;
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+    }
+}
