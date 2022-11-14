@@ -73,7 +73,7 @@
         $result = mysqli_query($db, 
         "UPDATE kucing SET bnama='$bnama', bjenis='$bjenis', knama='$knama',kkelamin='$kkelamin',bbook='$bbook',btrawat='$btrawat',bwaktu='$waktu' WHERE id='$id'");
         if ($result) {
-            header("Location:AdminJadwal.php");
+            header("Location:Adminjadwal.php");
         }
     }
 ?>
